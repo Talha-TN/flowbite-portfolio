@@ -50,27 +50,27 @@ const Projects = () => {
         Projects
       </h1>
       <div className="grid mt-6 grid-cols-1 m-auto  gap-8  md:grid-cols-3 md:gap-2 max-w-[1200px] ">
-        {myProjects.map((project) => {
+        {myProjects.map((project,index) => {
           return (
-            <div class="max-w-sm  bg-white border m-auto border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+            <div key={index} className="max-w-sm  bg-white border m-auto border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
               <img
-                class="rounded-t-lg w-[280px] h-[100px] md:w-[350px] md:h-[220px]"
+                className="rounded-t-lg w-[280px] h-[100px] md:w-[350px] md:h-[220px]"
                 src={project.imageSource}
                 alt="img"
               />
 
-              <div class="p-5">
-                <h5 class="mb-2 text-lg md:text-xl font-medium tracking-tight text-gray-900 dark:text-white paragraph">
+              <div className="p-5">
+                <h5 className="mb-2 text-lg md:text-xl font-medium tracking-tight text-gray-900 dark:text-white paragraph">
                   {project.name}
                 </h5>
 
-                <p class="mb-3 font-normal text-gray-700 dark:text-gray-400 paragraph">
+                <p className="mb-3 font-normal text-gray-700 dark:text-gray-400 paragraph">
                   {project.description}
                 </p>
                 <a
                   target="_blank"
                   href={project.link}
-                  class="paragraph inline-flex items-center px-6 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+                  className="paragraph inline-flex items-center px-6 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
                 >
                   view project
                 </a>
