@@ -4,13 +4,13 @@ const HeroSection = () => {
     // bg-gray-900
   return (
  
-      <div className="max-w-screen-xl flex flex-col md:flex-row items-center justify-between px-6 md:px-12 lg:px-2 py-12 m-auto lg:gap-10">
+      <div className="max-w-screen-xl flex flex-col md:flex-row items-center justify-between px-6 md:px-12 lg:px-2 py-2 m-auto lg:gap-10">
         <div className="text-center md:text-left md:w-1/2">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-700 leading-tight">
             Hi, I'm <span className="text-indigo-600">Talha Nawaz</span>
           </h1>
-          <p className="mt-4 text-lg md:text-xl text-black">
-            A passionate developer specializing in React JS. Let's build something amazing together.
+          <p className="mt-4 text-xl md:text-2xl text-black">
+           I am  a passionate frontend developer specializing in React.js, skilled in creating responsive and dynamic web applications using tools like Tailwind CSS, Next.js, and Redux. With a background in Software Engineering, he continuously enhances his skills to deliver engaging, modern user experiences.
           </p>
           <div className="mt-6">
             <a
