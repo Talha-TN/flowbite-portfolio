@@ -1,3 +1,26 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+.custom-hover-shadow {
+    transition: box-shadow 0.3s ease-in-out;
+    box-shadow: 8px 8px 8px rgb(65, 81, 104)
+    ; 
+  }
+  
+  .custom-hover-shadow:hover {
+    cursor: pointer;
+    box-shadow: 
+      0 20px 30px rgb(65, 81, 104)
+      ; 
+  }
+.heading{
+  font-family: "Dancing Script", cursive;
+}
+.paragraph{
+  font-family: "Raleway", sans-serif;
+}
