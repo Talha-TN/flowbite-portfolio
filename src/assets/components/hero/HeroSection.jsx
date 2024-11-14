@@ -3,13 +3,13 @@ import Profile from "../../images/profile.jpeg"
 const HeroSection = () => {
     // bg-gray-900
   return (
- 
-      <div className="max-w-screen-xl flex flex-col md:flex-row items-center justify-between px-6 md:px-12 lg:px-2 py-2 m-auto lg:gap-10 md:mt-10">
+         <div className="dark:bg-gray-900">
+      <div className="pt-8 max-w-screen-xl flex flex-col md:flex-row items-center justify-between px-6 md:px-12 lg:px-2 py-2 m-auto lg:gap-10 md:pt-10">
         <div className="text-center md:text-left md:w-1/2">
-          <h1 className="text-4xl md:text-5xl  font-bold text-gray-700 leading-tight heading">
+          <h1 className="text-4xl md:text-5xl  font-bold text-gray-700 leading-tight heading dark:text-white">
             Hi, I'm <span className="text-indigo-600 heading">Talha Nawaz</span>
           </h1>
-          <p className="mt-4 text-lg md:text-2xl text-black paragraph">
+          <p className="mt-4 text-lg md:text-2xl text-black paragraph dark:text-gray-400">
            I am  a passionate frontend developer specializing in React.js, skilled in creating responsive and dynamic web applications using tools like Tailwind CSS, Next.js, and Redux. With a background in Software Engineering, he continuously enhances his skills to deliver engaging, modern user experiences.
           </p>
           <div className="mt-6">
@@ -28,6 +28,7 @@ const HeroSection = () => {
             className="w-[250px] md:w-[400px] lg:w-[500px]  rounded-full shadow-lg"
           />
         </div>
+      </div>
       </div>
   
   );

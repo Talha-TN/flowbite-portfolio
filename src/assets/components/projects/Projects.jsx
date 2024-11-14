@@ -46,6 +46,7 @@ const Projects = () => {
   ];
   return (
     <>
+    <div className="dark:bg-gray-900">
       <h1 className="text-center text-indigo-600 text-2xl font-semibold md:text-3xl md:font-semibold heading">
         Projects
       </h1>
@@ -60,7 +61,7 @@ const Projects = () => {
               />
 
               <div className="p-5">
-                <h5 className="mb-2 text-lg md:text-xl font-medium tracking-tight text-gray-900 dark:text-white paragraph">
+                <h5 className="mb-2 text-lg md:text-xl font-medium tracking-tight text-gray-900 dark:text-gray-400 paragraph">
                   {project.name}
                 </h5>
 
@@ -70,7 +71,7 @@ const Projects = () => {
                 <a
                   target="_blank"
                   href={project.link}
-                  className="paragraph inline-flex items-center px-6 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+                  className="paragraph inline-flex items-center px-6 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 dark:text-gray-300"
                 >
                   view project
                 </a>
@@ -78,6 +79,7 @@ const Projects = () => {
             </div>
           );
         })}
+      </div>
       </div>
     </>
   );
