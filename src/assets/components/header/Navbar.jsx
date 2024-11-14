@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
 import { IoSunnyOutline } from "react-icons/io5";
-
+import resume from "../../images/Talha-nawaz-resume.pdf"
 const Navbar = () => {
   const [isDropdownOpen, setDropdownOpen] = useState(false);
   const [isMenuOpen, setMenuOpen] = useState(false);
@@ -23,20 +23,25 @@ const Navbar = () => {
   return (
     <nav className="bg-white border-gray-200 dark:bg-gray-900">
       <div className="flex flex-wrap items-center justify-between max-w-screen-xl mx-auto p-4">
-        <a href="https://flowbite.com" className="flex items-center space-x-3 rtl:space-x-reverse">
+        <a
+          href="https://flowbite.com"
+          className="flex items-center space-x-3 rtl:space-x-reverse"
+        >
           <span className="self-center text-xl md:2xl md:font-semibold whitespace-nowrap text-indigo-600 dark:text-white heading ">
             Talha Nawaz
           </span>
         </a>
         <div className="flex items-center md:order-2 space-x-1 md:space-x-2 rtl:space-x-reverse">
-      
-          <IoSunnyOutline className="mr-1 md:mr-2 text-lg"/>
+          <IoSunnyOutline className="mr-1 md:mr-2 text-lg" />
           <a
-            href="#"
+          href={resume}
+            download="Talha Nawaz resume.pdf"
             className="text-white  bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-[12px] md:text-sm px-3 py-1 md:px-5 md:py-2.5 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800 paragraph "
           >
             Resume
           </a>
+ 
+
           <button
             onClick={toggleMenu}
             type="button"
@@ -64,7 +69,9 @@ const Navbar = () => {
         </div>
         <div
           id="mega-menu"
-          className={`items-center justify-between w-full md:flex md:w-auto md:order-1 ${isMenuOpen ? 'block' : 'hidden'}`}
+          className={`items-center justify-between w-full md:flex md:w-auto md:order-1 ${
+            isMenuOpen ? "block" : "hidden"
+          }`}
         >
           <ul className="flex flex-col mt-4 font-medium md:flex-row md:mt-0 md:space-x-8 rtl:space-x-reverse">
             <li>
@@ -99,37 +106,126 @@ const Navbar = () => {
                 </svg>
               </button>
               {isDropdownOpen && (
-                <div
-                  className="absolute z-10 grid w-auto grid-cols-2 text-sm bg-white border border-gray-100 rounded-lg shadow-md dark:border-gray-700 md:grid-cols-3 dark:bg-gray-700"
-                >
+                <div className="absolute z-10 grid w-auto grid-cols-2 text-sm bg-white border border-gray-100 rounded-lg shadow-md dark:border-gray-700 md:grid-cols-3 dark:bg-gray-700">
                   <div className="p-4 pb-0 text-gray-900 md:pb-4 dark:text-white paragraph">
                     <ul className="space-y-4">
-                      <li><a href="#" className="text-gray-500 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-500">HTML</a></li>
-                      <li><a href="#" className="text-gray-500 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-500">CSS</a></li>
-                      <li><a href="#" className="text-gray-500 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-500">JavaScript</a></li>
-                      <li><a href="#" className="text-gray-500 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-500">React</a></li>
+                      <li>
+                        <a
+                          href="#"
+                          className="text-gray-500 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-500"
+                        >
+                          HTML
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          href="#"
+                          className="text-gray-500 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-500"
+                        >
+                          CSS
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          href="#"
+                          className="text-gray-500 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-500"
+                        >
+                          JavaScript
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          href="#"
+                          className="text-gray-500 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-500"
+                        >
+                          React
+                        </a>
+                      </li>
                     </ul>
                   </div>
                   <div className="p-4 pb-0 text-gray-900 md:pb-4 dark:text-white paragraph">
                     <ul className="space-y-4">
-                      <li><a href="#" className="text-gray-500 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-500">Tailwind CSS</a></li>
-                      <li><a href="#" className="text-gray-500 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-500">Bootstrap</a></li>
-                      <li><a href="#" className="text-gray-500 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-500">Node JS</a></li>
-                      <li><a href="#" className="text-gray-500 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-500">Express JS</a></li>
+                      <li>
+                        <a
+                          href="#"
+                          className="text-gray-500 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-500"
+                        >
+                          Tailwind CSS
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          href="#"
+                          className="text-gray-500 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-500"
+                        >
+                          Bootstrap
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          href="#"
+                          className="text-gray-500 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-500"
+                        >
+                          Node JS
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          href="#"
+                          className="text-gray-500 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-500"
+                        >
+                          Express JS
+                        </a>
+                      </li>
                     </ul>
                   </div>
                   <div className="p-4">
                     <ul className="space-y-4 paragraph">
-                      <li><a href="#" className="text-gray-500 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-500">Mongo DB</a></li>
-                      <li><a href="#" className="text-gray-500 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-500">Next.JS</a></li>
-                      <li><a href="#" className="text-gray-500 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-500">Figma</a></li>
+                      <li>
+                        <a
+                          href="#"
+                          className="text-gray-500 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-500"
+                        >
+                          Mongo DB
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          href="#"
+                          className="text-gray-500 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-500"
+                        >
+                          Next.JS
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          href="#"
+                          className="text-gray-500 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-500"
+                        >
+                          Figma
+                        </a>
+                      </li>
                     </ul>
                   </div>
                 </div>
               )}
             </li>
-            <li><a href="#" className="block py-2 px-3 text-gray-900 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-600 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-blue-500 md:dark:hover:bg-transparent dark:border-gray-700 paragraph">Projects</a></li>
-            <li><a href="#" className="block py-2 px-3 text-gray-900 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-600 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-blue-500 md:dark:hover:bg-transparent dark:border-gray-700 paragraph">Contact</a></li>
+            <li>
+              <a
+                href="#"
+                className="block py-2 px-3 text-gray-900 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-600 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-blue-500 md:dark:hover:bg-transparent dark:border-gray-700 paragraph"
+              >
+                Projects
+              </a>
+            </li>
+            <li>
+              <a
+                href="#"
+                className="block py-2 px-3 text-gray-900 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-600 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-blue-500 md:dark:hover:bg-transparent dark:border-gray-700 paragraph"
+              >
+                Contact
+              </a>
+            </li>
           </ul>
         </div>
       </div>
