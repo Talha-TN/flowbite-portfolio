@@ -61,11 +61,11 @@ const Projects = () => {
               />
 
               <div className="p-5">
-                <h5 className="mb-2 text-lg md:text-xl font-medium tracking-tight text-gray-900 dark:text-gray-400 paragraph">
+                <h5 className="mb-2 text-lg md:text-xl font-medium tracking-tight text-gray-900 dark:text-gray-400 paragraph hover:cursor-pointer hover:dark:text-white hover:underline underline-offset-4">
                   {project.name}
                 </h5>
 
-                <p className="mb-3 font-normal text-gray-700 dark:text-gray-400 paragraph">
+                <p className="mb-3 font-normal text-gray-700 dark:text-gray-400 paragraph hover:dark:text-white hover:underline underline-offset-4 hover:cursor-pointer">
                   {project.description}
                 </p>
                 <a

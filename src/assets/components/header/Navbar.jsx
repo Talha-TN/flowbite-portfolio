@@ -3,14 +3,25 @@ import { IoSunnyOutline } from "react-icons/io5";
 import { FaMoon } from "react-icons/fa";
 import { IoIosArrowDown } from "react-icons/io";
 import { MdOutlineKeyboardArrowUp } from "react-icons/md";
-
 import resume from "../../images/Talha-nawaz-resume.pdf";
-
 const Navbar = () => {
   const [isDropdownOpen, setDropdownOpen] = useState(false);
   const [isMenuOpen, setMenuOpen] = useState(false);
   const [darkMode, setDarkMode] = useState(false);
   const dropdownRef = useRef(null);
+  const skills = [
+    "HTML",
+    "CSS",
+    "Javascript",
+    "React",
+    "Tailwind CSS",
+    "Bootstrap",
+    "Node JS",
+    "Express Js",
+    "Next.JS",
+    "Mongo DB",
+    "Figma",
+  ];
 
   const toggleDropdown = () => setDropdownOpen(!isDropdownOpen);
   const toggleMenu = () => setMenuOpen(!isMenuOpen);
@@ -96,7 +107,7 @@ const Navbar = () => {
             <li>
               <a
                 href="#"
-                className="paragraph block py-2 px-3 text-blue-600 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-600 md:p-0 dark:text-blue-500 md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-blue-500 md:dark:hover:bg-transparent dark:border-gray-700"
+                className="paragraph block py-2 px-3 text-blue-600 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-600 md:p-0 dark:text-blue-500 md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-blue-500 md:dark:hover:bg-transparent dark:border-gray-700 hover:underline underline-offset-4"
                 aria-current="page"
               >
                 Home
@@ -107,109 +118,29 @@ const Navbar = () => {
                 onClick={toggleDropdown}
                 className="paragraph flex items-center justify-between w-full py-2 px-3 font-medium text-gray-900 border-b border-gray-100 md:w-auto hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-600 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-blue-500 md:dark:hover:bg-transparent dark:border-gray-700"
               >
-                Skills <span className="ml-2">{isDropdownOpen ? <MdOutlineKeyboardArrowUp/>:<IoIosArrowDown/>}</span>
-             
+                Skills{" "}
+                <span className="ml-2">
+                  {isDropdownOpen ? (
+                    <MdOutlineKeyboardArrowUp />
+                  ) : (
+                    <IoIosArrowDown />
+                  )}
+                </span>
               </button>
               {isDropdownOpen && (
-                <div className="absolute z-10 grid w-auto grid-cols-2 text-sm bg-white border border-gray-100 rounded-lg shadow-md dark:border-gray-700 md:grid-cols-3 dark:bg-gray-700">
-                  <div className="p-4 pb-0 text-gray-900 md:pb-4 dark:text-white paragraph">
-                    <ul className="space-y-4">
-                      <li>
-                        <a
-                          href="#"
-                          className="text-gray-500 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-500"
-                        >
-                          HTML
-                        </a>
-                      </li>
-                      <li>
-                        <a
-                          href="#"
-                          className="text-gray-500 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-500"
-                        >
-                          CSS
-                        </a>
-                      </li>
-                      <li>
-                        <a
-                          href="#"
-                          className="text-gray-500 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-500"
-                        >
-                          JavaScript
-                        </a>
-                      </li>
-                      <li>
-                        <a
-                          href="#"
-                          className="text-gray-500 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-500"
-                        >
-                          React
-                        </a>
-                      </li>
-                    </ul>
-                  </div>
-                  <div className="p-4 pb-0 text-gray-900 md:pb-4 dark:text-white paragraph">
-                    <ul className="space-y-4">
-                      <li>
-                        <a
-                          href="#"
-                          className="text-gray-500 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-500"
-                        >
-                          Tailwind CSS
-                        </a>
-                      </li>
-                      <li>
-                        <a
-                          href="#"
-                          className="text-gray-500 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-500"
-                        >
-                          Bootstrap
-                        </a>
-                      </li>
-                      <li>
-                        <a
-                          href="#"
-                          className="text-gray-500 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-500"
-                        >
-                          Node JS
-                        </a>
-                      </li>
-                      <li>
-                        <a
-                          href="#"
-                          className="text-gray-500 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-500"
-                        >
-                          Express JS
-                        </a>
-                      </li>
-                    </ul>
-                  </div>
-                  <div className="p-4">
-                    <ul className="space-y-4 paragraph">
-                      <li>
-                        <a
-                          href="#"
-                          className="text-gray-500 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-500"
-                        >
-                          Mongo DB
-                        </a>
-                      </li>
-                      <li>
-                        <a
-                          href="#"
-                          className="text-gray-500 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-500"
-                        >
-                          Next.JS
-                        </a>
-                      </li>
-                      <li>
-                        <a
-                          href="#"
-                          className="text-gray-500 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-500"
-                        >
-                          Figma
-                        </a>
-                      </li>
+                <div className="absolute z-10 flex flex-wrap w-fit text-sm bg-white border border-gray-100 rounded-lg shadow-md dark:border-gray-700 dark:bg-gray-700">
+                  <div className="p-6 text-gray-900 dark:text-white">
+                    <ul className="flex flex-wrap gap-4 max-w-[300px] md:max-w-[400px]">
+                      {skills.map((val, index) => (
+                        <li key={index} className="w-[25%] ">
+                          <a
+                            href="#"
+                            className="text-gray-500 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-500"
+                          >
+                            {val}
+                          </a>
+                        </li>
+                      ))}
                     </ul>
                   </div>
                 </div>
@@ -218,7 +149,7 @@ const Navbar = () => {
             <li>
               <a
                 href="#"
-                className="block py-2 px-3 text-gray-900 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-600 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-blue-500 md:dark:hover:bg-transparent dark:border-gray-700 paragraph"
+                className="block py-2 px-3 text-gray-900 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-600 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-blue-500 md:dark:hover:bg-transparent dark:border-gray-700 paragraph hover:underline underline-offset-4"
               >
                 Projects
               </a>
@@ -226,7 +157,7 @@ const Navbar = () => {
             <li>
               <a
                 href="#"
-                className="block py-2 px-3 text-gray-900 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-600 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-blue-500 md:dark:hover:bg-transparent dark:border-gray-700 paragraph"
+                className="block py-2 px-3 text-gray-900 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-600 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-blue-500 md:dark:hover:bg-transparent dark:border-gray-700 paragraph hover:underline underline-offset-4"
               >
                 Contact
               </a>

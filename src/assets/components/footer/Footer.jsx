@@ -17,21 +17,21 @@ const Footer = () => {
                   <h2 className="mb-6 text-sm font-semibold text-gray-700 uppercase  dark:text-white paragraph">Resources</h2>
                   <ul className="text-gray-500 dark:text-gray-400 font-medium">
                       <li className="mb-4">
-                          <a href="https://flowbite.com/" className="hover:underline paragraph">React Js</a>
+                          <a href="https://flowbite.com/" className="hover:underline paragraph underline-offset-4">React Js</a>
                       </li>
                       <li>
-                          <a href="https://tailwindcss.com/" className="hover:underline paragraph">Tailwind CSS</a>
+                          <a href="https://tailwindcss.com/" className="hover:underline paragraph underline-offset-4">Tailwind CSS</a>
                       </li>
                   </ul>
               </div>
               <div>
-                  <h2 className="mb-6 text-sm font-semibold text-gray-700 uppercase dark:text-white paragraph">Follow me</h2>
+                  <h2 className="mb-6 text-sm font-semibold text-gray-700 uppercase dark:text-white paragraph ">Follow me</h2>
                   <ul className="text-gray-500 dark:text-gray-400 font-medium">
                       <li className="mb-4">
-                          <a href="https://github.com/themesberg/flowbite" className="hover:underline paragraph ">Github</a>
+                          <a href="https://github.com/themesberg/flowbite" className="hover:underline paragraph underline-offset-4">Github</a>
                       </li>
                       <li>
-                          <a href="https://discord.gg/4eeurUVvTy" className="hover:underline paragraph">Linkedin</a>
+                          <a href="https://discord.gg/4eeurUVvTy" className="hover:underline paragraph underline-offset-4">Linkedin</a>
                       </li>
                   </ul>
               </div>
@@ -39,10 +39,10 @@ const Footer = () => {
                   <h2 className="mb-6 text-sm font-semibold text-gray-700 uppercase dark:text-white paragraph">Legal</h2>
                   <ul className="text-gray-500 dark:text-gray-400 font-medium">
                       <li className="mb-4">
-                          <a href="#" className="hover:underline paragraph">Privacy Policy</a>
+                          <a href="#" className="hover:underline paragraph underline-offset-4">Privacy Policy</a>
                       </li>
                       <li>
-                          <a href="#" className="hover:underline paragraph" >Terms &amp; Conditions</a>
+                          <a href="#" className="hover:underline paragraph underline-offset-4" >Terms &amp; Conditions</a>
                       </li>
                   </ul>
               </div>
@@ -50,7 +50,7 @@ const Footer = () => {
       </div>
       <hr className="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
       <div className="sm:flex sm:items-center sm:justify-between">
-          <span className="text-sm text-gray-500 sm:text-center dark:text-gray-400 paragraph">© 2024 <a href="https://flowbite.com/" className="hover:underline">Talha Nawaz™</a>. All Rights Reserved.
+          <span className="text-sm text-gray-500 sm:text-center dark:text-gray-400 paragraph">© 2024 <a href="https://flowbite.com/" className="hover:underline underline-offset-4">Talha Nawaz™</a>. All Rights Reserved.
           </span>
           <div className="flex mt-4 sm:justify-center sm:mt-0">
               <a href="#" className="text-gray-500 hover:text-indigo-600 dark:hover:text-white">
